@@ -7,15 +7,6 @@
         <title>Landing Page</title>
     </head>
     <body>
-
-        <!-- <header>
-            <h1>Placeholder title</h1>
-            <nav>
-                <a href="">GitHub</a>
-                <a href="">Portfolio</a>
-                <a href="#contacts">Contacts</a>
-            </nav>
-        </header> -->
         
         <section id="hero">
           <div class="hero_section" id="hero_section_a"></div>
@@ -34,39 +25,54 @@
         </div>  
         </section>
       
+        <!-- Main Section -->
         <main>
-            <h2>Who are we?</h2>
-            <p>
+            <section class="main-block" id="who_are_we">
+                <img src="./assets/Images/tree_divider-removebg-preview.png"
+                class="float-left" alt="tree icon">
+                <h2>Who are we?</h2>
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+               </p>
+            </section>
 
-            <h2>What we do</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <section class="main-block" id="what_we_do">
+                <img src="./assets/Images/tree_divider-removebg-preview.png"
+                class="float-right" alt="tree icon">
+                    <h2>What we do</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </section>
 
-            <h2>Your brand needs us</h2>
-            <p>
+            <section class="main-block" id="you_need_us">
+                <img src="./assets/Images/tree_divider-removebg-preview.png"
+                class="float-left" alt="tree icon">
+                <h2>Your brand needs us</h2>
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </main>
+              </p>
+            </section>
 
+            <!-- Contacts Section -->
             <section id="contacts">
-                <h3>Contact Us:</h3>
+                <h2>Contact Us:</h2>
 
               <form>
-                <label  class="input-label" for="email-input">Your Email:</label>
-                <input  class="input-box" type="email" name="email" placeholder="123@yahoo.com" id="email-input">
-                <br>
-                <label class="input-label" for="#name-input">Your full name: </label>
-                <input  class="input-box" type="text" name="name" placeholder="John Smith" id="name-input">
-                <br>
+                <div class="input_block">
+                    <label  class="input-label" for="email-input">Your Email:</label>
+                    <input  class="input-box" type="email" name="email" placeholder="123@yahoo.com" id="email-input">
+                </div>
+                <div class="input_block">
+                    <label class="input-label" for="#name-input">Your full name: </label>
+                    <input  class="input-box" type="text" name="name" placeholder="John Smith" id="name-input">
+                </div>
                 <button id="submit-button" class="contact-line" type="submit">Submit</button>
               </form>
 
@@ -75,6 +81,7 @@
 
         <footer>
             <p>Published: 8/12/22</p>
+            <p>Updated: 14/12/22</p>
             <p>Author: Daisy Everard</p>
         </footer>
 

@@ -1,13 +1,19 @@
 
 * {
     margin: 0; 
+    padding: 0; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;  
 }
 
 /* header css */
 footer {
     display: block;
-    width: 100vw;
+    width: 100%;
     background-color:rgb(44, 90, 44);
     color: white;
 }
@@ -36,6 +42,7 @@ nav a:hover {
     "a a b"
     "a a c";
     overflow: hidden;
+    margin: 0 auto;
 }
 
 #hero_section_a, #hero_section_b, #hero_section_c {
@@ -92,16 +99,65 @@ nav a:hover {
 
 /* main content */
 main {
-    margin-top: 70px; 
+    margin-top: 10px; 
 }
 
+.main-block {
+    margin: 10px; 
+    padding: 30px;
+    height: 150px;
+    color: white;
+    background-color: rgb(25, 53, 25);
+    overflow: hidden; 
+}
+
+.main-block img {
+    max-height: 100px; 
+}
+
+.main-block h2 {
+    margin-bottom: 5px;
+}
+
+.main-block p {
+    margin: 0 auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right; 
+}
+
+
+/* contacts */
 #contacts {
-    border: 1px solid black;
-    margin: 0 auto; 
-    width: 50%; 
-    max-width: 500px; 
+    margin: 10px; 
+    height: 200px; 
     border-radius: 15px;
-    background-color: rgb(172, 179, 169);
+    background-color: rgb(26, 148, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts form {
+    height: 80%; 
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contacts label {
+    float: left; 
+    font-weight: bold;
+}
+
+#contacts input {
+   float: right; 
 }
 
 /* footer */
