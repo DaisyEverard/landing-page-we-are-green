@@ -1,0 +1,112 @@
+
+* {
+    margin: 0; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* header css */
+footer {
+    display: block;
+    width: 100vw;
+    background-color:rgb(44, 90, 44);
+    color: white;
+}
+
+/* nav styling */
+nav a {
+    display: inline; 
+    color:rgb(25, 53, 25); 
+    text-decoration: none;
+    margin: 0 5px; 
+    
+}
+
+nav a:hover {
+    color: white; 
+}
+
+/* hero styling */
+#hero {
+    width: 100%; 
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a a b"
+    "a a c";
+    overflow: hidden;
+}
+
+#hero_section_a, #hero_section_b, #hero_section_c {
+  border: 3px solid white; 
+  background-position: center; 
+  background-size: cover;
+  width: 100%;
+  max-height: 100%;
+  
+}
+
+#hero_section_a {
+    grid-area: a;
+    background-image: url("../assets/Images/misty-forest-tobias-tullius-RhjVGxILcqE-unsplash.jpg");
+}
+#hero_section_b {
+    grid-area: b;
+    background-image: url("../assets/Images/drops-on-leaf.jpg");
+}
+#hero_section_c {
+    grid-area: c;
+    background-image: url("../assets/Images/river-waterfall-anders-ipsen-9XhgZmrvCEU-unsplash.jpg");
+}
+
+/* Welcome box */
+#welcome_box {
+    width: 35%; 
+    min-width: 200px;
+    height: 30%; 
+    z-index: 1;
+    background-color: rgba(255,255,255,0.8);
+    border: 6px solid white; 
+    position: absolute;
+    top: 170px;
+    right: 150px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#welcome_box h1 {
+    font-size: 50px;
+    color: rgb(70 139 70);
+    flex-basis: 60%;
+}
+
+#welcome_box a {
+  font-size: large;
+}
+
+#welcome_box a:hover{
+    color: rgb(26, 148, 26); 
+  }
+
+/* main content */
+main {
+    margin-top: 70px; 
+}
+
+#contacts {
+    border: 1px solid black;
+    margin: 0 auto; 
+    width: 50%; 
+    max-width: 500px; 
+    border-radius: 15px;
+    background-color: rgb(172, 179, 169);
+}
+
+/* footer */
+footer p {
+    display: inline; 
+    margin: 0 5px; 
+}
+
